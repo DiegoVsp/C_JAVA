@@ -1,0 +1,27 @@
+package exercicios;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner entrada = new Scanner(System.in);
+
+		int A, B, C, D;
+		
+		System.out.println("");
+		A=entrada.nextInt();
+		System.out.println("");
+		B=entrada.nextInt();
+		System.out.println("");
+		C=entrada.nextInt();
+		System.out.println("");
+		D=entrada.nextInt();
+		entrada.close();
+
+	}
+
+}

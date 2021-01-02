@@ -1,0 +1,19 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class EntradaDeDados {
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner entrada = new Scanner(System.in);
+		char x;
+		
+		System.out.println("Digite sua idade: ");
+		x=entrada.next().charAt(0);
+		
+		System.out.println("Você digitou "+x);
+		entrada.close();
+	}
+}
