@@ -1,0 +1,18 @@
+package exerciciosCondicionais;
+
+import java.util.Scanner;
+
+public class Imposto {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		double salario, imposto;
+
+		System.out.println("Digite o salario: ");
+		salario = entrada.nextDouble();
+
+		entrada.close();
+	}
+}

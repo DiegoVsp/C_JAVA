@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class SwitchCase {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		int numeroSem;
+		
+		System.out.println("Digite o número da semana: ");
+		numeroSem = entrada.nextInt();
+		
+		switch(numeroSem) {
+		case 1:
+			System.out.println("Domingo");
+			break;
+		case 2:
+			System.out.println("Segunda");
+			break;
+		}
+		entrada.close();
+	}
+}
