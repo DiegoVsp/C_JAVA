@@ -1,0 +1,25 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Peca {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		int numeroPeca, qtdPeca, numeroPeca2, qtdPeca2;
+		double valorPeca, valorPeca2;
+
+		System.out.println("Digite o número da primeira peça: ");
+		numeroPeca = entrada.nextInt();
+
+		System.out.println("Digite a quantidade da primeira Peça: ");
+		qtdPeca = entrada.nextInt();
+
+		System.out.println("Digite o valor unitário da primeira Peça: ");
+		valorPeca = entrada.nextDouble();
+
+		entrada.close();
+	}
+}
