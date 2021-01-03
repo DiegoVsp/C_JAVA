@@ -1,0 +1,7 @@
+package exerciciosCondicionais;
+
+public class NegativoPositivo {
+	public static void main(String[] args) {
+
+	}
+}

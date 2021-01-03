@@ -1,0 +1,11 @@
+package exerciciosCondicionais;
+
+import java.util.Scanner;
+
+public class NegativoPositivo {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		entrada.close();
+	}
+}

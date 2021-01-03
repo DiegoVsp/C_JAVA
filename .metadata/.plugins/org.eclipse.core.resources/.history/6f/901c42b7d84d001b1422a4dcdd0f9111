@@ -1,0 +1,22 @@
+package exerciciosCondicionais;
+
+import java.util.Scanner;
+
+public class Intervalo {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		int valor;
+		System.out.println("Digite um valor");
+		valor=entrada.nextInt();
+		
+		if(valor>0 && valor <=25) {
+			System.out.println("Intervalo [0,25]");
+		}
+		
+		entrada.close();
+	}
+
+}
