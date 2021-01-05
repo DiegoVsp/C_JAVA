@@ -1,0 +1,23 @@
+package exercicioWhile;
+
+import java.util.Scanner;
+
+public class Posto {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		int combustivel;
+		int alcool=0, gasolina=0, diesel=0;
+		
+		System.out.println("Informe sua preferência:");
+		System.out.println("\n1-Gasolina\n2-Alcool\n3-Diesel\n4-FIM");
+		combustivel = entrada.nextInt();
+		while(combustivel!=4) {
+			
+		}
+		
+		entrada.close();
+	}
+}

@@ -1,0 +1,42 @@
+package exercicioWhile;
+
+import java.util.Scanner;
+
+public class Posto {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		int combustivel;
+		int alcool=0, gasolina=0, diesel=0;
+		
+		System.out.println("Informe sua preferência:");
+		System.out.println("\n1-Alcool\n2-Gasolina\n3-Diesel\n4-FIM");
+		combustivel = entrada.nextInt();
+		
+		while(combustivel!=4) {
+			if(combustivel<1 || combustivel>4) {
+				System.out.println("Informe novo Código");
+			}else {
+				switch(combustivel) {
+				case 1:
+					gasolina++;
+					break;
+				case 2:
+					alcool++;
+					break;
+				case 3:
+					diesel++;
+					break;
+				}
+			}
+			
+			combustivel = entrada.nextInt();
+		}
+		System.out.println("Muito Obrigado!");
+		System.out.printf("Alcool %d,%Gasolina %d,%nDiesel %d,%n",alcool,gasolina,diesel);
+		
+		entrada.close();
+	}
+}
