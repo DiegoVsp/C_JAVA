@@ -1,0 +1,23 @@
+package exercicioFor;
+
+import java.util.Scanner;
+
+public class MediaPonderada {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		int cont;
+
+		System.out.println("Digite o número de notas");
+		cont = entrada.nextInt();
+
+		for (int i = 0; i < cont; i++) {
+			System.out.println("Digite a");
+		}
+
+		entrada.close();
+	}
+
+}
