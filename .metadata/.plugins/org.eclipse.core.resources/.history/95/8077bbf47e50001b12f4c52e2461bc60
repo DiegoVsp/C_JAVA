@@ -1,0 +1,22 @@
+package exercicioFor;
+
+import java.util.Scanner;
+
+public class InOut {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		int in = 0, out = 0;
+		System.out.println("Digite um valor inteiro");
+		int n = entrada.nextInt();
+
+		for (int i = 0; i <= n -1; i++) {
+			System.out.println(i);
+		}
+
+		entrada.close();
+
+	}
+
+}
