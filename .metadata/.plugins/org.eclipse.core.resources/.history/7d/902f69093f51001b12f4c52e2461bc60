@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Split {
+
+	public static void main(String[] args) {
+	
+		Scanner entrada = new Scanner(System.in);
+		
+		entrada.close();
+
+	}
+
+}

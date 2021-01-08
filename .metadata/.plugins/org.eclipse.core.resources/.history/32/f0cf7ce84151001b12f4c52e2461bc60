@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Funcoes {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Enter three numbers: ");
+		int a = entrada.nextInt();
+		int b = entrada.nextInt();
+		int c = entrada.nextInt();
+
+		int higher = max(a,b,c);
+
+		entrada.close();
+
+	}
+	
+	public static int max(int x,int y, int z) {
+		
+		if (a > b && a > c) {
+			System.out.println("Higher = " + x);
+		} else if (b > c) {
+			System.out.println("Higher = " + y);
+		} else {
+			System.out.println("Higher = " + z);
+		}
+	}
+
+}

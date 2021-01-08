@@ -1,0 +1,10 @@
+package introduçãoOrientacaoObjeto;
+
+public class AreaTri {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

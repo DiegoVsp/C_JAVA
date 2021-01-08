@@ -1,0 +1,18 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+		double xA, xB, xC, yA, yB, yC;
+
+		System.out.println("Enter the measures of triangle X: ");
+		xA = entrada.nextDouble();
+		
+				entrada.close();
+	}
+
+}
