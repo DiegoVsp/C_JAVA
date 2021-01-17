@@ -18,11 +18,11 @@ public class Program {
 		int accountNumber = entrada.nextInt();
 		
 		System.out.print("Enter the account holder: ");
-		String titular = entrada.next();
-		
-		Conta conta = new Conta(accountNumber,titular);
-		
 		entrada.nextLine();
+		String titular = entrada.nextLine();
+		
+		Conta conta = new Conta(accountNumber,titular);	
+		
 		
 		System.out.print("Is there a initial deposit value (y/n) ? ");
 		char opcao = entrada.nextLine().charAt(0);
