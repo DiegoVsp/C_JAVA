@@ -12,7 +12,7 @@ public class Texto {
 		String s05 = original.substring(2,9);
 		String s06 = original.replace("a", "x");
 		String s07 = original.replace("abc","xy");
-		int i = original.indexOf("bc");
+		int i = original.indexOf("e");
 		int j = original.lastIndexOf("bc");
 		
 		
@@ -25,7 +25,7 @@ public class Texto {
 		System.out.println("Substring(2,9) - " + s05 + "-");
 		System.out.println("Replace - " + s06 + "-");
 		System.out.println("Replace - " + s07 + "-");
-		System.out.println("indexOf - " + i + "-");
-		System.out.println("indexOf - " + j + "-");
+		System.out.println("indexOf - " + i + " ");
+		System.out.println("indexOf - " + j + " ");
 	}
 }

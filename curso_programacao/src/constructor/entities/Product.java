@@ -19,23 +19,23 @@ public class Product {
 	public Product(String name, double price) {
 		this.name = name;
 		this.price = price;
-		// quantity = 0; //opcional
+	}
+	
+
+	public String getName() {
+		return name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getName() {
-		return name;
+	public double getPrice() {
+		return price;
 	}
 
 	public void setPrice(double price) {
 		this.price = price;
-	}
-
-	public double getPrice() {
-		return price;
 	}
 
 	public int getQuantity() {
@@ -53,7 +53,7 @@ public class Product {
 	public void RemoveProduct(int quantity) {
 		this.quantity -= quantity;
 	}
-
+	
 	public String toString() {
 		return name + ", $ " + String.format("%.2f", price) + ", " + quantity + " units, Total: $ "
 				+ String.format("%.2f", TotalValueStock());
