@@ -13,6 +13,7 @@ public class Programa {
 
 		int n = entrada.nextInt();
 		Produto[] vect = new Produto[n];
+		
 
 		for (int i = 0; i < vect.length; i++) { // n ou vect.length
 			entrada.nextLine(); // colocar para consumir a quebra de linha que ficou pendente no nextInt();
