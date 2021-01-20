@@ -10,7 +10,7 @@ public class Program {
 
 		Locale.setDefault(Locale.US);
 		Scanner entrada = new Scanner(System.in);
-
+		//Exercicio Proposto LISTA
 		List<Funcionario> list = new ArrayList<>();
 
 		System.out.println("How many employees will be registered? ");
@@ -42,7 +42,7 @@ public class Program {
 		System.out.println("");
 		System.out.println("Enter the employee id that will have salary increase: ");
 		int idSalary = entrada.nextInt();
-		Funcionario emp = list.stream().filter(x -> x.getId() == idSalary).findFirst().orElse(null);
+		Funcionario emp = list.stream().filter(x -> x.getId() == idSalary).findFirst().orElse(null); //expressão lambda
 		// Integer pos = position(list, idSalary);
 
 		if (emp == null) {

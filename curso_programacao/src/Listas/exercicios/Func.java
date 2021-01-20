@@ -1,26 +1,19 @@
-package Listas.exer_proposto;
+package Listas.exercicios;
 
-public class Funcionario {
+public class Func {
 
-	private int id;
 	private String nome;
+	private int id;
 	private double salario;
-	
-	public Funcionario() {
-		
+
+	public Func() {
+
 	}
-	public Funcionario(int id, String nome, double salario) {
+
+	public Func(int id, String nome, double salario) {
 		this.id = id;
 		this.nome = nome;
 		this.salario = salario;
-	}	
-	
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getNome() {
@@ -31,18 +24,21 @@ public class Funcionario {
 		this.nome = nome;
 	}
 
+	public int getId() {
+		return id;
+	}
+
 	public double getSalario() {
 		return salario;
 	}
-	
 
 	public void aumentoSalario(double percentage) {
-		salario+=salario*percentage/100;
+		salario += salario * percentage / 100;
 	}
 	
-	@Override //sempre é bom de se colocar
+	@Override
 	public String toString() {
 		return "Funcionario id:" + id + ", " + nome + ", R$" + String.format("%.2f", salario);
 	}
-	
+
 }

@@ -16,7 +16,7 @@ public class Program {
 		System.out.println("Enter the account number: ");
 		int number = entrada.nextInt();
 		
-		System.out.println("Enter the account number: ");
+		System.out.println("Enter the account holder: ");
 		entrada.nextLine(); // para consumir a quebra de linha que ficou pendente no nextInt
 		String holder = entrada.nextLine();
 		

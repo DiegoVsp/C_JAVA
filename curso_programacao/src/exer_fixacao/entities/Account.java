@@ -14,7 +14,6 @@ public class Account {
 	}
 
 	public Account(int number, String holder) {
-		super();
 		this.number = number;
 		this.holder = holder;
 	}
