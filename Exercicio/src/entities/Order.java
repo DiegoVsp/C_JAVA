@@ -9,6 +9,7 @@ import entities.enums.OrderStatus;
 
 public class Order {
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
 	private Date moment;
 	private OrderStatus status;
 	
@@ -52,9 +53,9 @@ public class Order {
 	}
 
 
-	public List<OrderItem> getItems() {
-		return items;
-	}
+	//public List<OrderItem> getItems() {
+	//	return items;
+	//}
 
 
 	//public void setItems(List<OrderItem> items) {
@@ -77,7 +78,7 @@ public class Order {
 	public void removeItem(OrderItem item) {
 		items.remove(item);
 	}
-	public Double Total() {
+	public double Total() {
 		double total = 0;
 		for(OrderItem i : items) {
 			total+=i.subTotal();
@@ -88,21 +89,20 @@ public class Order {
 
 	@Override
 	public String toString() {
-		
 		StringBuilder sb = new StringBuilder();
-		sb.append("ORDER SUMARY: \n");
-		sb.append("ORDER Moment: \n");
-		sb.append(" "+moment);
-		sb.append("Order Status: "+status + "\n");
-		sb.append("Cliente"+client.getName()+" ");
-		sb.append(sdf.format("( "+client.getBirthDate())+" ) -");
-		sb.append(" "+client.getEmail());
-		sb.append("\n ");	
-		sb.append("Order Items");	
-		for(OrderItem i : items) {
-			sb.append(i.getProduct().getName()+"\n"+i.getProduct().getPrice());
+		sb.append("Order moment: ");
+		sb.append(sdf.format(moment) + "\n");
+		sb.append("Order status: ");
+		sb.append(status + "\n");
+		sb.append("Client: ");
+		sb.append(client + "\n");
+		sb.append("Order items:\n");
+		for (OrderItem item : items) {
+			sb.append(item + "\n");
 		}
-		return sb.toString(); // Convertendo StringBuilder para string
+		sb.append("Total price: $");
+		sb.append(String.format("%.2f", Total()));
+		return sb.toString();
 	}
 	
 	

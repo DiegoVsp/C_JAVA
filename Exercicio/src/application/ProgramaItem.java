@@ -2,11 +2,9 @@ package application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.TimeZone;
 
 import entities.Cliente;
 import entities.Order;
@@ -34,19 +32,21 @@ public class ProgramaItem {
 		System.out.print("Data Nascimento (DD/MM/YYYY): ");
 		Date birthDate = sdf.parse(entrada.nextLine());
 		
+		Cliente cliente = new Cliente(name, email, birthDate);
+		
 		System.out.println("Insira o status do pedido");
 		System.out.print("Status: ");
 		String status = entrada.nextLine();
 		
-		Date moment = new Date();
-				
-		Order order = new Order(moment, OrderStatus.valueOf(status), new Cliente(name, email, birthDate));
 		
+		Order order = new Order(new Date(), OrderStatus.valueOf(status), cliente);
+		//Order order = new Order(new Date(), OrderStatus.valueOf(status), new Cliente(name, email, birthDate));
+			
 		System.out.println("How many items to this order? ");
 		int n = entrada.nextInt();
 		for(int i = 0; i< n;i++) {
 			System.out.println("");
-			System.out.printf("Entre com o #%d item\n",i+1);
+			System.out.printf("Entre com o #%d item\n",(i+1));
 			System.out.print("Product name: ");
 			entrada.nextLine();
 			String productName = entrada.nextLine();
@@ -55,9 +55,11 @@ public class ProgramaItem {
 			System.out.println("Quantidade: ");
 			int quantidade = entrada.nextInt();
 			
-			OrderItem item = new OrderItem(quantidade, productPrice, new Product(productName, productPrice));
+			Product product = new Product(productName, productPrice);
+			OrderItem item = new OrderItem(quantidade, productPrice, product);
+			//OrderItem item = new OrderItem(quantidade, productPrice, new Product(productName, productPrice));
 			
-			item.subTotal();
+			
 			order.addItem(item);			
 			
 		}
