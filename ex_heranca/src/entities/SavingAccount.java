@@ -21,7 +21,9 @@ public class SavingAccount extends Account {
 	}
 	
 	@Override //sobreposição
-	public void withdraw(double amount) {
+	public final void withdraw(double amount) { 
 		balance-=amount;
 	}
+	//convém acrescentar  final em métodos sobrepostos,
+	//pois sobreposições multiplas podem ser uma porta de entrada para inconsistências.
 }
